@@ -1,0 +1,147 @@
+body {
+  background: #04897d;
+  font-size: 16px;
+}
+
+.wrap {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  margin: 50px auto;
+  width: 300px;
+  box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inner-top {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: end;
+  box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  color: #04897d;
+}
+
+.inner-wrap {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "clear clean divide multi"
+    "seven eight nine minus"
+    "four five six add"
+    "one two three equal"
+    "zero dot dot equal";
+}
+
+.inner-wrap button {
+  border: 0;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #04897d;
+  cursor: pointer;
+  box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.inner-wrap button:hover {
+  background: #04897d;
+  color: #fff;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.clean {
+  grid-area: clean;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiply {
+  grid-area: multi;
+}
+
+.no-add {
+  grid-area: add;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.no-7 {
+  grid-area: seven;
+}
+
+.no-8 {
+  grid-area: eight;
+}
+
+.no-9 {
+  grid-area: nine;
+}
+
+.no-4 {
+  grid-area: four;
+}
+
+.no-5 {
+  grid-area: five;
+}
+
+.no-6 {
+  grid-area: six;
+}
+
+.no-1 {
+  grid-area: one;
+}
+
+.no-2 {
+  grid-area: two;
+}
+
+.no-3 {
+  grid-area: three;
+}
+
+.no-0 {
+  grid-area: zero;
+}
+
+.no-zero {
+  grid-area: dot;
+}
+
+.no-equal {
+  grid-area: equal;
+}
+
+.prank {
+  animation: shake 0.3s ease-in;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(1rem);
+  }
+
+  40% {
+    transform: translateX(-1.5rem);
+  }
+
+  70% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    transform: translateX(-1.5rem);
+  }
+}
